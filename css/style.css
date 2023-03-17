@@ -159,3 +159,46 @@ h6 {
 .menu__item {
   margin-left: 25%;
 }
+.print {
+  padding-top: 70px;
+}
+.print__container {
+  position: relative;
+}
+.print__content {
+  display: flex;
+  flex-direction: column;
+}
+.print__content.left {
+  width: 57%;
+}
+.print__content.right {
+  width: 43%;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+.print__image {
+  width: 98%;
+  right: 0;
+  top: -100px;
+}
+.print__title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #182F4F;
+}
+.print__title span {
+  margin-left: 40px;
+}
+.print__subtitle {
+  width: 80%;
+  margin-top: 90px;
+  margin-bottom: 165px;
+  font-weight: 350;
+  line-height: 30px;
+  color: rgba(24, 47, 79, 0.8);
+}

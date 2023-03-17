@@ -1,0 +1,51 @@
+.print {
+
+    padding-top: 70px;
+
+    &__container {
+        position: relative;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        &.left {
+            width: 57%;
+        }
+        &.right {
+            width: 43%;            
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            right: 0;
+            top: -100px;
+        }
+        
+    }
+
+    &__image {
+        width: 98%;        
+        right: 0;
+        top: -100px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 96px;
+        color: #182F4F;
+
+        & span {
+            margin-left: 40px;
+        }
+    }
+
+    &__subtitle {
+        width: 80%;
+        margin-top: 90px;
+        margin-bottom: 165px;
+        font-weight: 350;
+        line-height: 30px;
+        color: rgba(24, 47, 79, 0.8);
+    }
+}

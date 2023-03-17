@@ -1,0 +1,73 @@
+.header {
+    font-weight: 500;
+    line-height: 20px;
+    color: #182F4F;
+    padding-top: 32px;
+
+    &__container {}
+
+    &__main {
+        width: 100%;
+        display: flex;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: end;
+
+    }
+
+    &__menu {
+        display: flex;
+        width: 100%;
+    }
+
+    &__burger {}
+}
+
+.logo {
+
+    &__image {}
+
+    &__img {
+        width: 55px;
+        height: 35px;
+    }
+
+    &__text {
+        width: 153px;
+        margin-left: 6px;
+    }
+}
+
+.menu {
+
+    &__body {
+        display: flex;        
+        align-items: end;
+        width: 50%;
+    }
+
+    &__list {
+        display: flex;        
+        align-items: center;
+        width: 100%;
+    }
+
+    &__item {
+        margin-left: 25%;
+    }
+
+    &__link {}
+}
+
+.burger {
+
+    &__line {}
+}
+
+.cross-top {}
+
+.hide {}
+
+.cross-bottom {}

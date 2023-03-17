@@ -1,0 +1,161 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kyiv Type Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+}
+body.lock {
+  overflow: hidden;
+}
+
+[class*=__container] {
+  display: flex;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 768px) {
+  [class*=__container] {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (max-width: 690px) {
+  [class*=__container] {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@font-face {
+  font-family: "Kyiv Type Sans";
+  src: url("../fonts/Dmitry Rastvortsev - Kyiv_Type Sans.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Kyiv Type Sans", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Kyiv Type Sans", sans-serif;
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.header {
+  font-weight: 500;
+  line-height: 20px;
+  color: #182F4F;
+  padding-top: 32px;
+}
+.header__main {
+  width: 100%;
+  display: flex;
+}
+.header__logo {
+  display: flex;
+  align-items: end;
+}
+.header__menu {
+  display: flex;
+  width: 100%;
+}
+.logo__img {
+  width: 55px;
+  height: 35px;
+}
+.logo__text {
+  width: 153px;
+  margin-left: 6px;
+}
+
+.menu__body {
+  display: flex;
+  align-items: end;
+  width: 50%;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.menu__item {
+  margin-left: 25%;
+}

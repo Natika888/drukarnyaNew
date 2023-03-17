@@ -37,6 +37,7 @@
     &__text {
         width: 153px;
         margin-left: 6px;
+        color: #182F4F;
     }
 }
 
@@ -58,7 +59,9 @@
         margin-left: 25%;
     }
 
-    &__link {}
+    &__link {
+        color: #182F4F;
+    }
 }
 
 .burger {

@@ -144,6 +144,7 @@ h6 {
 .logo__text {
   width: 153px;
   margin-left: 6px;
+  color: #182F4F;
 }
 
 .menu__body {
@@ -159,6 +160,10 @@ h6 {
 .menu__item {
   margin-left: 25%;
 }
+.menu__link {
+  color: #182F4F;
+}
+
 .print {
   padding-top: 70px;
 }

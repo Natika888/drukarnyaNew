@@ -1,5 +1,4 @@
 .print {
-
     padding-top: 70px;
 
     &__container {
@@ -9,30 +8,99 @@
     &__content {
         display: flex;
         flex-direction: column;
+
         &.left {
             width: 57%;
         }
+
         &.right {
-            width: 43%;            
+            width: 43%;
             align-items: center;
             justify-content: space-between;
             position: absolute;
             right: 0;
             top: -100px;
         }
-        
+
+    }
+
+    &__links {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__link {
+        position: relative;
+        padding: 105px 155px 35px 30px;
+        border-radius: 40px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: #FDFDFD;
+
+        &::after {
+            content: url("../img/ArrowUpRight.svg");
+            display: block;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            bottom: 35px;
+            right: 55px;
+        }
+
+        &.link__bk {
+            background: #E5013A;
+
+            &::before {
+                content: url(../img/bkPic.png);
+                display: block;
+                width: 135px;
+                height: 175px;
+                position: absolute;
+                top: -120px;
+            }
+        }
+
+        &.link__vs {
+            background: #03ADC6;
+
+            &::before {
+                content: url(../img/vsPic.png);
+                display: block;
+                width: 135px;
+                height: 175px;
+                position: absolute;
+                top: -120px;
+            }
+        }
     }
 
     &__image {
-        width: 98%;        
+        width: 98%;
         right: 0;
         top: -100px;
     }
 
+    &__days {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        margin-top: 56px;
+
+    }
+
+    &__hours {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 4px;
+    }
+
     &__title {
         font-weight: 700;
-        font-size: 80px;
-        line-height: 96px;
+        font-size: 75px;
+        line-height: 90px;
         color: #182F4F;
 
         & span {
@@ -42,8 +110,8 @@
 
     &__subtitle {
         width: 80%;
-        margin-top: 90px;
-        margin-bottom: 165px;
+        margin-top: 50px;
+        margin-bottom: 150px;
         font-weight: 350;
         line-height: 30px;
         color: rgba(24, 47, 79, 0.8);

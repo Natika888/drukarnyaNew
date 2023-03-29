@@ -281,26 +281,32 @@ h6 {
 .print__title {
   position: relative;
   font-weight: 700;
-  font-size: 75px;
+  font-size: 80px;
   line-height: 90px;
   color: #182F4F;
 }
 .print__title::after {
   content: url("../img/cat.svg");
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -70px;
+  right: 60px;
 }
 .print__title span {
   position: relative;
   padding-left: 40px;
   color: #FDFDFD;
-  display: inline-block;
-  width: 400px;
-  overflow: visible;
+}
+.print__title span::before {
+  content: "";
+  display: block;
+  position: absolute;
   background-image: url("../img/btnBG.png");
-  background-size: cover;
-  background-position: 0;
+  background-repeat: no-repeat;
+  width: 411px;
+  height: 350px;
+  z-index: -1;
+  top: -52px;
+  left: -10px;
 }
 .print__subtitle {
   width: 80%;

@@ -47,6 +47,121 @@
             }
         }
     }
+
+    &__content {
+        width: 65%;
+        margin: 0 auto;
+        padding-top: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #182F4F;
+
+        &_title {
+            text-decoration-line: underline;
+            line-height: 24px;
+        }
+
+        &_item {
+            position: relative;
+            line-height: 30px;
+            margin-top: 12px;
+            padding-left: 36px;
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../img/rhombus.svg);
+                width: 20px;
+                height: 28px;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 140px;
+
+    }
+
+    &__btn-bk {
+        position: relative;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/bgBkImage.png);
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 200px;
+            left: -50px;
+            top: -110px;
+            z-index: -1;
+        } 
+
+        &_link {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 48%;
+            letter-spacing: 0.03em;
+            color: #FDFDFD;
+            transform: translateX(-50px);
+            transform: rotate(-6deg);  
+
+            
+            
+            &::after {
+                content: url("../img/ArrowUpRight.svg");
+                display: block;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                bottom: -9px;
+                right: -100px;
+            }
+        }    
+    }
+
+    &__btn-vs {
+        position: relative;
+        padding-bottom: 2px;
+        
+        
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/bgVsImage.png);
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 200px;
+            left: -50px;
+            top: -100px;
+            z-index: -1;
+        } 
+
+        &_link {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 48%;
+            letter-spacing: 0.03em;
+            color: #FDFDFD;
+            transform: rotate(4.5deg);       
+                             
+            
+            &::after {
+                content: url("../img/ArrowUpRight.svg");
+                display: block;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                bottom: -9px;
+                right: -100px;
+            }
+        }    
+    }
 }
 
 .colored {

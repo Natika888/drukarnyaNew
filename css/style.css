@@ -185,10 +185,8 @@ h6 {
 .menu__list {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
-}
-.menu__item {
-  margin-left: 25%;
 }
 .menu__link {
   color: #182F4F;
@@ -384,6 +382,104 @@ h6 {
 }
 .price__card_content p {
   margin-bottom: 12px;
+}
+.price__content {
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #182F4F;
+}
+.price__content_title {
+  text-decoration-line: underline;
+  line-height: 24px;
+}
+.price__content_item {
+  position: relative;
+  line-height: 30px;
+  margin-top: 12px;
+  padding-left: 36px;
+}
+.price__content_item::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/rhombus.svg);
+  width: 20px;
+  height: 28px;
+  left: 0;
+  top: 0;
+}
+.price__btns {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 140px;
+}
+.price__btn-bk {
+  position: relative;
+}
+.price__btn-bk::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/bgBkImage.png);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 200px;
+  left: -50px;
+  top: -110px;
+  z-index: -1;
+}
+.price__btn-bk_link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 48%;
+  letter-spacing: 0.03em;
+  color: #FDFDFD;
+  transform: translateX(-50px);
+  transform: rotate(-6deg);
+}
+.price__btn-bk_link::after {
+  content: url("../img/ArrowUpRight.svg");
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: -9px;
+  right: -100px;
+}
+.price__btn-vs {
+  position: relative;
+  padding-bottom: 2px;
+}
+.price__btn-vs::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/bgVsImage.png);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 200px;
+  left: -50px;
+  top: -100px;
+  z-index: -1;
+}
+.price__btn-vs_link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 48%;
+  letter-spacing: 0.03em;
+  color: #FDFDFD;
+  transform: rotate(4.5deg);
+}
+.price__btn-vs_link::after {
+  content: url("../img/ArrowUpRight.svg");
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: -9px;
+  right: -100px;
 }
 
 .colored {

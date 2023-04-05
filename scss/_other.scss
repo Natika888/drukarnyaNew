@@ -1,0 +1,14 @@
+.other {
+    padding-top: 50px;
+    padding-bottom: 65px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        & .section__title {
+            width: 75%;
+        }
+    }
+}

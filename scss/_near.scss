@@ -1,0 +1,137 @@
+.near {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__map {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 70px;
+        margin-bottom: 65px;
+
+        & .map {
+            height: 400px;
+            border-radius: 40px;
+        }
+
+        & .map-bk {
+            width: 48.5%;            
+            position: relative;
+
+            &::before {
+                content: '';
+            position: absolute;
+            background-image: url(../img/zebra.png);
+            background-repeat: no-repeat;
+            width: 230px;
+            height: 450px;
+            border-radius: 40px;            
+            left: -48px;
+            top: -25px;
+            z-index: -1;            
+            }
+        } 
+
+                & .map-vs {
+                    width: 48.5%;
+                    position: relative;
+        
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-color: #E7B236;
+                        width: 1014px;
+                        height: 450px;
+                        border-radius: 40px;
+                        left: -375px;
+                        top: -25px;
+                        z-index: -1;
+                    }
+
+                    &::after {
+                        content: '';
+            position: absolute;
+            background-image: url(../img/cat.svg);
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            top: -105px;
+            right: 170px;
+                    }
+                }
+    }
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+
+    &__title {
+        padding-top: 115px;
+    }
+
+    &__working-hours {
+    }
+
+    &__shop-name {
+    }
+
+    &__email {
+    }
+
+    &__socials {
+    }
+    &__bk,
+    &__vs {
+        text-align: center;
+    }
+    &__vs {
+    }
+}
+.bk-title {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/bkPic.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 60px;
+        height: 80px;
+        top: 0;
+        left: 210px;
+    }
+}
+.bk-socials {
+}
+.viber {
+}
+.social-item {
+}
+.telegram {
+}
+.facebook {
+}
+.instagram {
+}
+.vs-title {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/vsPic.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 60px;
+        height: 80px;
+        top: 0;
+        left: 148px;
+    }
+}
+
+
+

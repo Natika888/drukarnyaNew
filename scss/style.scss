@@ -25,6 +25,7 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    
 
     @media (max-width:768px) {        
         padding-left: 25px;
@@ -91,4 +92,6 @@ body {
 @import "header";
 @import "print";
 @import "price";
+@import "other";
+@import "near";
 @import "footer";

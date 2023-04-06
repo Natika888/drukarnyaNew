@@ -1,4 +1,5 @@
 .near {
+    padding-bottom: 64px;
 
     &__container {
         display: flex;
@@ -72,28 +73,54 @@
 
     &__title {
         padding-top: 115px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 8px;
     }
 
-    &__working-hours {
-    }
+        &__working-hours {
+            font-weight: 350;
+            font-size: 18px;
+            line-height: 24px;
+        }
 
     &__shop-name {
+        font-weight: 500;
+font-size: 18px;
+line-height: 24px;
     }
 
     &__email {
+        font-weight: 350;
+font-size: 18px;
+line-height: 24px;
+font-weight: 350;
+font-size: 18px;
+line-height: 24px;
+color: #182F4F;
     }
 
     &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 12px;
+        color: #000;
+
     }
     &__bk,
     &__vs {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+        
     }
-    &__vs {
-    }
+    
 }
 .bk-title {
     position: relative;
+    color: #E5013A;
     &::before {
         content: '';
         position: absolute;
@@ -103,7 +130,7 @@
         width: 60px;
         height: 80px;
         top: 0;
-        left: 210px;
+        left: 30px;
     }
 }
 .bk-socials {
@@ -111,6 +138,8 @@
 .viber {
 }
 .social-item {
+    width: 32px;
+    height: 32px;
 }
 .telegram {
 }
@@ -120,6 +149,7 @@
 }
 .vs-title {
     position: relative;
+    color: #03ADC6;
     &::before {
         content: '';
         position: absolute;
@@ -129,7 +159,7 @@
         width: 60px;
         height: 80px;
         top: 0;
-        left: 148px;
+        left: 50px;
     }
 }
 

@@ -510,6 +510,9 @@ h6 {
   width: 75%;
 }
 
+.near {
+  padding-bottom: 64px;
+}
 .near__container {
   display: flex;
   flex-direction: column;
@@ -574,12 +577,46 @@ h6 {
 }
 .contacts__title {
   padding-top: 115px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.contacts__working-hours {
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts__shop-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts__email {
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 24px;
+  color: #182F4F;
+}
+.contacts__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  color: #000;
 }
 .contacts__bk, .contacts__vs {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
 }
+
 .bk-title {
   position: relative;
+  color: #E5013A;
 }
 .bk-title::before {
   content: "";
@@ -590,11 +627,17 @@ h6 {
   width: 60px;
   height: 80px;
   top: 0;
-  left: 210px;
+  left: 30px;
+}
+
+.social-item {
+  width: 32px;
+  height: 32px;
 }
 
 .vs-title {
   position: relative;
+  color: #03ADC6;
 }
 .vs-title::before {
   content: "";
@@ -605,5 +648,32 @@ h6 {
   width: 60px;
   height: 80px;
   top: 0;
-  left: 148px;
+  left: 50px;
+}
+
+.footer {
+  background: #182F4F;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__container .logo__text {
+  color: #FDFDFD;
+}
+.footer__rights {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__rights a {
+  text-decoration: underline;
+}
+.footer__rights :where(p, a) {
+  color: #98A2B3;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 24px;
 }

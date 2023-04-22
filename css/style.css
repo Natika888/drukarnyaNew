@@ -166,7 +166,7 @@ h6 {
   width: 100%;
   display: flex;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .header__main {
     justify-content: space-between;
     align-items: center;
@@ -225,7 +225,7 @@ h6 {
   margin-left: 6px;
   color: #182F4F;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .logo__text {
     font-weight: 500;
     font-size: 16px;
@@ -278,7 +278,7 @@ h6 {
 .print__container {
   position: relative;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__container {
     flex-direction: column-reverse;
   }
@@ -298,7 +298,7 @@ h6 {
   right: 0;
   top: -100px;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__content.left {
     width: 100%;
   }
@@ -313,6 +313,13 @@ h6 {
   display: flex;
   column-gap: 30px;
 }
+@media (max-width: 430px) {
+  .print__links {
+    justify-content: space-around;
+    max-width: 59%;
+    margin: 0 auto;
+  }
+}
 .print__link {
   position: relative;
   padding: 80px 150px 30px 30px;
@@ -323,19 +330,20 @@ h6 {
   letter-spacing: 0.03em;
   color: #FDFDFD;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 14px;
     padding: 27px 12px 12px 12px;
     border-radius: 15px;
     letter-spacing: 0.03em;
   }
 }
 .print__link::after {
-  content: url("../img/ArrowUpRight.svg");
+  content: "";
+  background-image: url("../img/ArrowUpRight.svg");
   display: block;
   width: 25px;
   height: 25px;
@@ -343,45 +351,72 @@ h6 {
   bottom: 35px;
   right: 55px;
 }
+@media (max-width: 430px) {
+  .print__link::after {
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    top: 7px;
+    right: 7px;
+  }
+}
 .print__link.link__bk {
   background: #E5013A;
 }
 .print__link.link__bk::before {
-  content: url(../img/bkPic.png);
+  content: "";
+  background-image: url(../img/bkPic.png);
   display: block;
   width: 135px;
   height: 175px;
   position: absolute;
   top: -120px;
+}
+@media (max-width: 430px) {
+  .print__link.link__bk::before {
+    width: 38px;
+    height: 50px;
+    background-size: 38px 50px;
+    top: -30px;
+  }
 }
 .print__link.link__vs {
   background: #03ADC6;
 }
 .print__link.link__vs::before {
-  content: url(../img/vsPic.png);
+  content: "";
+  background-image: url(../img/vsPic.png);
   display: block;
   width: 135px;
   height: 175px;
   position: absolute;
   top: -120px;
+}
+@media (max-width: 430px) {
+  .print__link.link__vs::before {
+    width: 38px;
+    height: 50px;
+    background-size: 38px 50px;
+    top: -30px;
+  }
 }
 .print__price {
   position: relative;
   z-index: 1;
   margin-top: 90px;
 }
+@media (max-width: 430px) {
+  .print__price {
+    display: none;
+  }
+}
 .print__price::before {
-  content: url("../img/priceLinkBg.png");
+  content: "";
+  background-image: url("../img/priceLinkBg.png");
   position: absolute;
   left: -120px;
   top: -140px;
   z-index: 0;
-}
-@media (max-width: 360px) {
-  .print__price::before {
-    display: none;
-    width: 190px;
-  }
 }
 .print__price_link {
   position: relative;
@@ -403,12 +438,30 @@ h6 {
   right: -100px;
   z-index: 1;
 }
+.print__price-mobile {
+  display: none;
+}
+@media (max-width: 430px) {
+  .print__price-mobile {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  .print__price-mobile::before {
+    content: "";
+    background-image: url("../img/priceLinkBg.png");
+    position: absolute;
+    left: -120px;
+    top: -140px;
+    z-index: 0;
+  }
+}
 .print__image {
   width: 90%;
   right: 0;
   top: -100px;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__image {
     display: none;
   }
@@ -416,7 +469,7 @@ h6 {
 .print__image-small {
   display: none;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__image-small {
     display: block;
     position: relative;
@@ -427,15 +480,35 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__schedule {
+    display: none;
+  }
+}
+.print__image-adaptive {
+  position: relative;
+  display: none;
+}
+@media (max-width: 430px) {
+  .print__image-adaptive {
+    display: block;
+  }
+}
+.print__schedule-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 430px) {
+  .print__schedule-small {
     padding: 4px 8px;
-    width: 20%;
+    width: 25%;
+    max-width: 70px;
     background: #FFFFFF;
     border-radius: 8px;
     position: absolute;
-    right: 21%;
-    top: 10.4%;
+    right: 13%;
+    top: 72%;
   }
 }
 .print__days {
@@ -444,7 +517,7 @@ h6 {
   line-height: 56px;
   margin-top: 56px;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__days {
     margin-top: 0;
     font-size: 16px;
@@ -457,7 +530,7 @@ h6 {
   line-height: 30px;
   margin-top: 4px;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__hours {
     font-size: 8px;
     line-height: 8px;
@@ -470,9 +543,10 @@ h6 {
   line-height: 90px;
   color: #182F4F;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__title {
     width: 75%;
+    min-width: 260px;
     margin: 0 auto;
     font-size: 32px;
     line-height: 41px;
@@ -486,7 +560,7 @@ h6 {
   bottom: -70px;
   right: 60px;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__title::after {
     background-size: 37px 37px;
     width: 37px;
@@ -500,7 +574,7 @@ h6 {
   padding-left: 40px;
   color: #FDFDFD;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__title span {
     line-height: 37px;
     padding-left: 10px;
@@ -518,7 +592,7 @@ h6 {
   top: -52px;
   left: -10px;
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__title span::before {
     background-size: 176px 82px;
     width: 176px;
@@ -535,13 +609,15 @@ h6 {
   line-height: 30px;
   color: rgba(24, 47, 79, 0.8);
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .print__subtitle {
     width: 100%;
     font-weight: 350;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
 
